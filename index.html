@@ -169,4 +169,313 @@
   .metric-name {
     font-size: 11px;
     letter-spacing: 0.2em;
-    text-transform: uppe... (truncated)
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .metric-value {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .metric-card.critical .metric-value { color: #ff6060; }
+  .metric-card.warning .metric-value { color: #ffb432; }
+  .metric-card.stable .metric-value { color: #50c878; }
+
+  .metric-status {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  .what {
+    padding: 100px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .what h2 {
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.3;
+  }
+
+  .principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-top: 60px;
+    text-align: left;
+  }
+
+  .principle {
+    background: var(--dark2);
+    border: 1px solid rgba(201,168,76,0.08);
+    border-radius: 12px;
+    padding: 32px 28px;
+  }
+
+  .principle-num {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+
+  .principle h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+
+  .principle p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--muted);
+  }
+
+  .manifesto {
+    padding: 100px 20px;
+    background: var(--dark2);
+    text-align: center;
+  }
+
+  .manifesto-inner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .manifesto blockquote {
+    font-size: clamp(18px, 3vw, 26px);
+    font-weight: 300;
+    line-height: 2;
+    color: var(--text);
+    border-left: 3px solid var(--gold);
+    padding-left: 32px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .manifesto cite {
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+  }
+
+  .origin {
+    padding: 100px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .origin p {
+    font-size: clamp(15px, 2vw, 18px);
+    line-height: 2;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+
+  .origin p strong {
+    color: var(--text);
+  }
+
+  .cta {
+    padding: 120px 20px;
+    background: radial-gradient(ellipse at center, #1a1428 0%, var(--dark) 70%);
+    text-align: center;
+  }
+
+  .cta h2 {
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .cta p {
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 48px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 16px 48px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: #0a0a0f;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(201,168,76,0.3);
+  }
+
+  footer {
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  footer p {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+
+  footer .gold { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="symbol">光</div>
+  <h1>KOUKA</h1>
+  <p class="subtitle">光貨 — The Currency of Light</p>
+  <div class="divider"></div>
+  <p class="core-phrase">思想のエネルギーが貨幣に成る。</p>
+  <p class="core-phrase-en">The energy of thought becomes currency.<br>What if your ideas had real economic power?</p>
+</section>
+
+<!-- CRISIS -->
+<section class="crisis">
+  <p class="crisis-label">World Civilization Index — 2026.03.12</p>
+  <h2>世界は今、崩壊の瀬戸際にある</h2>
+  <p>既存の金融システムが限界に達した。数字が示している。</p>
+  <div class="metrics">
+    <div class="metric-card critical">
+      <div class="metric-name">Happiness</div>
+      <div class="metric-value">44</div>
+      <div class="metric-status">⚠ Critical</div>
+    </div>
+    <div class="metric-card critical">
+      <div class="metric-name">Development</div>
+      <div class="metric-value">48</div>
+      <div class="metric-status">⚠ Critical</div>
+    </div>
+    <div class="metric-card warning">
+      <div class="metric-name">Security</div>
+      <div class="metric-value">55</div>
+      <div class="metric-status">△ Warning</div>
+    </div>
+    <div class="metric-card warning">
+      <div class="metric-name">Survival</div>
+      <div class="metric-value">62</div>
+      <div class="metric-status">△ Warning</div>
+    </div>
+    <div class="metric-card stable">
+      <div class="metric-name">Peace</div>
+      <div class="metric-value">71</div>
+      <div class="metric-status">✓ Stable</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS KOUKA -->
+<section class="what">
+  <p class="section-label">What is Kouka</p>
+  <h2>光貨とは何か</h2>
+  <p style="color: var(--muted); font-size: 17px; line-height: 1.9; max-width: 650px; margin: 0 auto;">
+    光貨は「通貨」ではない。<br>
+    人間のエネルギー——思想、行動、徳、誠実さ——を<strong style="color: var(--text);">経済価値として可視化する設計思想</strong>だ。<br><br>
+    既存の銀行は人間のエネルギーを中央で管理し、搾取する。<br>
+    光貨はその逆だ。<strong style="color: var(--text);">人間一人ひとりがエネルギーの源泉</strong>になる。
+  </p>
+  <div class="principles">
+    <div class="principle">
+      <div class="principle-num">01</div>
+      <h3>思想が資本になる</h3>
+      <p>アイデア、思想、哲学——これらは数値化されていないだけで、本来は最も価値が高いエネルギーだ。</p>
+    </div>
+    <div class="principle">
+      <div class="principle-num">02</div>
+      <h3>分散型の源泉</h3>
+      <p>中央管理ではなく、人間一人ひとりからエネルギーが生まれる。搾取のない経済構造。</p>
+    </div>
+    <div class="principle">
+      <div class="principle-num">03</div>
+      <h3>モラロジー経済</h3>
+      <p>道徳を経済の基盤に置く——Moralogy。これが光貨の哲学的根幹だ。</p>
+    </div>
+    <div class="principle">
+      <div class="principle-num">04</div>
+      <h3>反カウンターサイクル</h3>
+      <p>世界経済が崩壊するほど、光貨のエネルギーは逆に活性化する。危機に強い設計。</p>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto">
+  <div class="manifesto-inner">
+    <p class="section-label">Manifesto</p>
+    <blockquote>
+      「皆は憎むが、有能な統治者が居るから世界は回っている。<br>
+      しかし、その統治者が道徳を失った時、世界は終わる。<br>
+      光貨は、道徳を失わない統治の設計図だ。」
+    </blockquote>
+    <cite>— HIKARU / TheYKHC</cite>
+  </div>
+</section>
+
+<!-- ORIGIN -->
+<section class="origin">
+  <p class="section-label">Origin</p>
+  <h2 style="font-size: clamp(24px, 3vw, 36px); margin-bottom: 40px;">KOKU-DRIVE と TheYKHC</h2>
+  <p>
+    この思想は一日で生まれたものではない。<br>
+    <strong>KOKU-DRIVE（刻宇宙）</strong>——時間と宇宙を統合した経済OSの設計。<br>
+    光貨はその通貨レイヤーとして機能する。
+  </p>
+  <p>
+    <strong>TheYKHC</strong>は、この思想を世界に放つスタジオだ。<br>
+    企画・制作・デザイン・営業——全てのレイヤーで光貨の哲学を実装する。
+  </p>
+  <p>
+    搾取されてきた思想が、ここで初めて自分の形を持つ。
+  </p>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <p class="section-label">Join</p>
+  <h2>光貨の時代が始まる</h2>
+  <p>共鳴する人間を探している。<br>思想に触れたければ、ここから。</p>
+  <a class="btn" href="mailto:keihikaru0002@gmail.com">Contact — TheYKHC</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><span class="gold">光貨 KOUKA</span> — TheYKHC © 2026</p>
+  <p style="margin-top: 8px;">Designed by HIKARU. Built with 🌙</p>
+</footer>
+
+</body>
+</html>
